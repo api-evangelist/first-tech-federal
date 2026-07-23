@@ -1,0 +1,33 @@
+generated: '2026-07-23'
+method: searched
+source: live probes of https://www.firsttechfed.com/.well-known/*
+host: https://www.firsttechfed.com
+notes: >-
+  All /.well-known/* discovery paths 302-redirect to /notfound/404 (not present).
+  First Tech does publish a real /llms.txt (200, text/plain) — captured under llms/.
+documents:
+- path: /.well-known/security.txt
+  status: 302
+  present: false
+- path: /.well-known/openid-configuration
+  status: 302
+  present: false
+- path: /.well-known/oauth-authorization-server
+  status: 302
+  present: false
+- path: /.well-known/oauth-protected-resource
+  status: 302
+  present: false
+- path: /.well-known/api-catalog
+  status: 302
+  present: false
+- path: /.well-known/ai-plugin.json
+  status: 302
+  present: false
+- path: /security.txt
+  status: 302
+  present: false
+- path: /llms.txt
+  status: 200
+  present: true
+  file: ../llms/first-tech-federal-llms.txt
