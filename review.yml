@@ -1,0 +1,80 @@
+aid: first-tech-federal
+name: First Tech Federal Credit Union
+review:
+  question: Does First Tech Federal Credit Union expose a first-party public developer
+    API, developer portal, downloadable OpenAPI/Swagger, or a documented FDX / CFPB
+    Section 1033 data-access posture?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    First Tech Federal Credit Union is a federally chartered, member-owned,
+    not-for-profit credit union headquartered in San Jose, California and one
+    of the largest credit unions in the United States, serving employees of the
+    technology industry and their families. No first-party public developer
+    portal, published API reference, or downloadable OpenAPI/Swagger definition
+    was identified. Consistent with the norm for US credit unions, consumer
+    financial data access is understood to occur through third-party
+    aggregators (Plaid, MX, Finicity, Akoya) rather than a directly documented
+    first-party API. No documented FDX participation and no published CFPB
+    Section 1033 (Personal Financial Data Rights) posture were found. This is an
+    honest identity-only record with an empty apis[] block; no host, spec, or
+    endpoint was invented.
+  posture:
+    firstPartyDeveloperPortal: false
+    downloadableSpecs: false
+    fdxParticipant: unknown
+    section1033Posture: unknown
+    aggregatorAccess: true
+    authModel: none-documented
+    specProvenance: none
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No first-party public REST API is documented by First Tech Federal.
+    - protocol: FDX
+      documented: false
+      note: No first-party FDX-conformant consumer data-access API was found. US
+        FDX specifications are member-gated and were not fabricated.
+  probes:
+    - url: https://firsttechfed.com
+      httpStatus: '000'
+      note: Connection failed from the build environment (network unreachable);
+        no live HTTP status could be confirmed.
+    - url: https://www.firsttechfed.com
+      httpStatus: '000'
+      note: Connection failed from the build environment; canonical institution
+        homepage recorded from established knowledge, not a live 200.
+    - url: https://developer.firsttechfed.com
+      httpStatus: '000'
+      note: Connection failed; no developer portal at this host could be confirmed
+        live. No such portal is known to exist for this credit union.
+    - url: https://api.firsttechfed.com
+      httpStatus: '000'
+      note: Connection failed; no public API host could be confirmed live.
+  environmentNote: |
+    Live URL probing was not possible during this review — outbound network
+    access from the build environment failed for every host (curl returned 000
+    / connection failure rather than an HTTP status, and web fetches timed out),
+    and the web-search budget was exhausted. Identity facts were drawn from
+    well-established public knowledge of First Tech Federal Credit Union. No
+    developer portal, OpenAPI specification, endpoint, or FDX/1033 claim was
+    fabricated; where existence could not be verified, it is recorded as
+    unknown or false rather than asserted.
+sources:
+  - url: https://www.firsttechfed.com/
+    type: Website
+    note: Canonical institution homepage (primary domain firsttechfed.com); not
+      verified via live probe due to build-environment network failure.
+  - url: https://www.linkedin.com/company/first-tech-federal-credit-union
+    type: LinkedIn
+    note: Institution LinkedIn presence; not verified via live probe.
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Identity-only bootstrap record created. apis[] left empty because no
+    documented first-party public API surface exists for this credit union.
+    Common properties limited to canonical Website and LinkedIn. No OpenAPI was
+    harvested because none is publicly downloadable.
