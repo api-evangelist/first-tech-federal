@@ -1,4 +1,4 @@
-# First Tech Federal Credit Union (first-tech-federal)
+# First Tech Federal Credit Union
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,40 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-First Tech Federal Credit Union is a federally chartered, member-owned, not-for-profit financial cooperative headquartered in San Jose, California, and one of the largest credit unions in the United States. Founded to serve employees of the technology industry and their families, it is NCUA-insured and provides consumer and business banking, lending, mortgages, credit cards, and wealth services through its website and mobile apps.
+First Tech Federal Credit Union is a federally chartered, member-owned, not-for-profit financial cooperative headquartered in San Jose, California, and one of the largest credit unions in the United States. It was founded to serve employees of the technology industry and their families, and its membership is drawn heavily from workers at major technology employers. As an NCUA-insured credit union, First Tech offers consumer and business deposit accounts, lending, mortgages, credit cards, and wealth services delivered primarily through its website and mobile apps. Like the vast majority of US credit unions, First Tech publishes no first-party public developer portal or documented open API; consumer-permissioned financial data sharing is handled through third-party data aggregators (such as Plaid, MX, Finicity, and Akoya) rather than a directly documented first-party API surface. US open finance is voluntary and fragmented — the Financial Data Exchange (FDX) standard and the CFPB Section 1033 Personal Financial Data Rights rule are still emerging — and no first-party FDX-conformant data-access API or published Section 1033 posture was found for First Tech during this review.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/first-tech-federal/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/first-tech-federal/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Credit Union · Open Finance
 
-## Open Finance / API Posture
+## First Tech Federal Credit Union on APIs.io
 
-Like the vast majority of US credit unions, First Tech Federal publishes **no first-party public developer portal or documented open API**. Consumer-permissioned financial data sharing is handled through third-party data aggregators (Plaid, MX, Finicity, Akoya) rather than a directly documented first-party API surface.
+Everything profiled for First Tech Federal Credit Union is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/first-tech-federal/](https://apis.io/providers/first-tech-federal/)** — or go straight to one of the APIs or properties below.
 
-US open finance is voluntary and fragmented. The Financial Data Exchange (FDX) standard and the CFPB's Section 1033 Personal Financial Data Rights rule are still emerging. No first-party FDX-conformant data-access API and no published Section 1033 posture were found for First Tech during this review. This is an identity-only record: honest, non-fabricated, with an empty `apis[]` because no public API surface exists.
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Financial Services
-- Banking
-- United States
-- Credit Union
-- Open Finance
-- Data Aggregation
+#### Security (1)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+- [First Tech Federal Domain Security](https://apis.io/security/first-tech-federal/first-tech-federal-domain-security/)
 
-## APIs
+## Where to find this API
 
-None. First Tech Federal exposes no documented first-party public API. Data access is aggregator-mediated.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.firsttechfed.com/)
-- [LinkedIn](https://www.linkedin.com/company/first-tech-federal-credit-union)
+- [Pricing](https://www.firsttechfed.com/rates)
+- [Support](https://www.firsttechfed.com/help)
+- [Blog](https://www.firsttechfed.com/learn/article-gallery)
+- [Privacy policy](https://www.firsttechfed.com/help/consumer-privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 7.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 3.6 |
+| Access clarity | 17.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 6.3** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/first-tech-federal/](https://apis.io/providers/first-tech-federal/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for First Tech Federal Credit Union: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/first-tech-federal/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
